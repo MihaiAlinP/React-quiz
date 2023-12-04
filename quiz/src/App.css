@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.Quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+#title {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.question-container {
+  margin-bottom: 30px;
+}
+
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: rgb(38, 38, 161);
+  
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+li {
+  margin-bottom: 15px;
+}
+
+
+.answer-button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+
+.answer-button:hover {
+  background-color: #f0f8ff;
+}
+
+
+.answer-button.checked {
+  background-color: #f0f8ff;
+}
+
+.finish {
+  padding: 10px;
+  border: none;
+  background-color: #276272;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.finish:hover {
+  background-color: #1c4d5a;
+}
+
+
+.results {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+
+
+@media (min-width: 600px) {
+  .Quiz-container {
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .Quiz-container {
+    width: 70%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .Quiz-container {
+    width: 60%;
+  }
+}
